@@ -2411,6 +2411,12 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         defenderHoldEffectParam = ItemId_GetHoldEffectParam(defender->item);
     }
 
+    if (attacker->ability == ABILITY_GODLIKE)
+    {
+        attack *= 3;
+        spAttack *= 3;
+    }
+
     if (attacker->ability == ABILITY_HUGE_POWER || attacker->ability == ABILITY_PURE_POWER)
         attack *= 2;
 

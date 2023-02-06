@@ -1515,7 +1515,7 @@ void ForcePlayerToStartSurfing(void)
 }
 
 static const u16 sStarterSpecies[] = {
-    SPECIES_BULBASAUR,
+    SPECIES_MEW,
     SPECIES_SQUIRTLE,
     SPECIES_CHARMANDER
 };
